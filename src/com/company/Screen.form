@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.company.Screen">
+  <grid id="27dc6" binding="panelMain" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-16514525"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="b5ca" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16514525"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="f3069" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-720901"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="a15a5" class="javax.swing.JButton" binding="termButton">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16514525"/>
+                  <font name="Apple Chancery" size="14"/>
+                  <foreground color="-16514525"/>
+                  <text value="Term overlook"/>
+                </properties>
+              </component>
+              <component id="51d89" class="javax.swing.JRadioButton" binding="quizRadioButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-720901"/>
+                  <font name="Apple Chancery" size="14"/>
+                  <foreground color="-16514525"/>
+                  <text value="Quiz"/>
+                </properties>
+              </component>
+              <component id="62b86" class="javax.swing.JRadioButton" binding="testRadioButton" default-binding="true">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-720901"/>
+                  <font name="Apple Chancery" size="14"/>
+                  <foreground color="-16514525"/>
+                  <text value="Test"/>
+                </properties>
+              </component>
+              <component id="beadc" class="javax.swing.JRadioButton" binding="homeworkRadioButton" default-binding="true">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-720901"/>
+                  <font name="Apple Chancery" size="14"/>
+                  <foreground color="-16514525"/>
+                  <text value="Homework"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="a3a42" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-16514525"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="d28ab" class="javax.swing.JLabel" binding="nameLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16514525"/>
+                  <font name="Apple Chancery" size="14"/>
+                  <foreground color="-720901"/>
+                  <text value="task name"/>
+                </properties>
+              </component>
+              <component id="1e3ef" class="javax.swing.JLabel" binding="marksLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Apple Chancery" size="14"/>
+                  <foreground color="-720901"/>
+                  <text value="marks gotten"/>
+                </properties>
+              </component>
+              <component id="30c4d" class="javax.swing.JTextField" binding="textname">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-720901"/>
+                </properties>
+              </component>
+              <component id="dc5cb" class="javax.swing.JTextField" binding="textmark">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-720901"/>
+                </properties>
+              </component>
+              <component id="423ec" class="javax.swing.JTextField" binding="texttotmark">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-720901"/>
+                </properties>
+              </component>
+              <component id="cc64f" class="javax.swing.JLabel" binding="totmarksLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Apple Chancery" size="14"/>
+                  <foreground color="-720901"/>
+                  <text value="total marks"/>
+                </properties>
+              </component>
+              <component id="93e87" class="javax.swing.JLabel" binding="typeLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-720901"/>
+                  <font name="Apple Chancery" size="14"/>
+                  <foreground color="-720901"/>
+                  <text value="Type of Task"/>
+                </properties>
+              </component>
+              <component id="fb087" class="javax.swing.JLabel" binding="tLabel">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-720901"/>
+                  <text value=" "/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="f5fb2" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16514525"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="36b0d" class="javax.swing.JLabel" binding="titleLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bodoni 72 Oldstyle" size="18"/>
+              <foreground color="-720901"/>
+              <text value="Grade Logbook"/>
+            </properties>
+          </component>
+          <component id="675f9" class="javax.swing.JList" binding="listGrades">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-720901"/>
+              <font name="Apple Chancery" size="14"/>
+              <foreground color="-16514525"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="9f1bc" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16514525"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="65eca" class="javax.swing.JLabel" binding="perLabel">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Apple Chancery" size="16"/>
+              <foreground color="-720901"/>
+              <text value="Final Percentage"/>
+            </properties>
+          </component>
+          <component id="c6f31" class="javax.swing.JButton" binding="perButton">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-720901"/>
+              <font name="Apple Chancery" size="16"/>
+              <foreground color="-16514525"/>
+              <text value="="/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="bf770" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16514525"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="5936f" class="javax.swing.JButton" binding="updateButton">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-16514525"/>
+              <font name="Apple Chancery" size="16"/>
+              <foreground color="-16514525"/>
+              <text value="Update Grade"/>
+            </properties>
+          </component>
+          <component id="6d94c" class="javax.swing.JButton" binding="addButton">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-16514525"/>
+              <font name="Apple Chancery" size="16"/>
+              <foreground color="-16514525"/>
+              <text value="Add to logbook"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
