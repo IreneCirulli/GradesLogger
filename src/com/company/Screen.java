@@ -98,6 +98,7 @@ public class Screen extends JFrame{
 
                 Grades.allmarks = av1;
                 Screen2 screen = new Screen2();
+                screen.setSize(900, 450);
                 screen.setVisible(true);
             }
         });
