@@ -31,7 +31,7 @@ public class Screen extends JFrame{
     private ArrayList<Grades> grade;
     private DefaultListModel listGradesModel;
     static int m = 0;
-    static double[] orderper = new double[m];
+    static double[] orderper;
 
 
     Screen() {
@@ -66,6 +66,7 @@ public class Screen extends JFrame{
                 String av1 = " ";
                 String num1;
                 int min;
+               orderper = new double[m];
 
                 for(int i = 0; i < grade.size(); i++){
                    num = Double.parseDouble(grade.get(i).getPercentage());
