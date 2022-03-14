@@ -171,7 +171,7 @@
           </grid>
         </children>
       </grid>
-      <grid id="f5fb2" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="f5fb2" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -201,6 +201,17 @@
               <background color="-720901"/>
               <font name="Apple Chancery" size="14"/>
               <foreground color="-16514525"/>
+            </properties>
+          </component>
+          <component id="7d670" class="javax.swing.JButton" binding="edButton">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-983055"/>
+              <font name="Apple Chancery" size="12"/>
+              <foreground color="-15002828"/>
+              <text value="Edit Boundaries"/>
             </properties>
           </component>
         </children>

@@ -27,8 +27,11 @@ public class Screen extends JFrame{
     private JButton updateButton;
     private JLabel typeLabel;
     private JLabel tLabel;
+    private JButton edButton;
     private ArrayList<Grades> grade;
     private DefaultListModel listGradesModel;
+    static int m = 0;
+    static double[] orderper = new double[m];
 
 
     Screen() {
@@ -45,12 +48,15 @@ public class Screen extends JFrame{
         radiobuttonGroup.add(testRadioButton);
         radiobuttonGroup.add(homeworkRadioButton);
 
-        while(quizRadioButton.isSelected())
+        if(quizRadioButton.isSelected()) {
             tLabel.setText("Quiz");
-       while(testRadioButton.isSelected())
-            tLabel.setText("Test");
-        while(homeworkRadioButton.isSelected())
+        }
+       else if(testRadioButton.isSelected()) {
+                tLabel.setText("Test");
+            }
+        else if(homeworkRadioButton.isSelected()) {
             tLabel.setText("Homework");
+        }
 
         termButton.addActionListener(new ActionListener() {
             @Override
@@ -59,6 +65,8 @@ public class Screen extends JFrame{
                 double num;
                 String av1 = " ";
                 String num1;
+                int min;
+
                 for(int i = 0; i < grade.size(); i++){
                    num = Double.parseDouble(grade.get(i).getPercentage());
                     av = num + av;
@@ -66,12 +74,37 @@ public class Screen extends JFrame{
                 Grades.average = Double.toString(av/grade.size());
                 Grades.finalmarks = Grades.getFinalMark(Grades.average);
 
-                for(int i = 0; i < grade.size(); i++){
-                    num1 = grade.get(i).getPercentage();
+                for (int k = 0; k < grade.size(); k++)
+                    orderper[k] = Double.parseDouble(grade.get(k).getPercentage());
+
+                for (int i = 0; i < grade.size()-1; i++)
+                {
+                    min = i;
+                    for (int j = i+1; j < grade.size(); j++) {
+                        if (orderper[j] < orderper[min])
+                            min = j;
+                    }
+
+                    double temp = orderper[min];
+                    orderper[min] = orderper[i];
+                    orderper[i] = temp;
+                }
+
+                for(int i = 0; i < orderper.length; i++){
+                    num1 =  String.valueOf(orderper[i]);
                     av1 = " " + av1 + " " + num1;
                 }
+
                 Grades.allmarks = av1;
                 Screen2 screen = new Screen2();
+                screen.setVisible(true);
+            }
+        });
+
+        edButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Screen3 screen = new Screen3();
                 screen.setVisible(true);
             }
         });
@@ -106,6 +139,7 @@ public class Screen extends JFrame{
                 String c = texttotmark.getText();
                 Grades num = new Grades(a,b,c);
                 perLabel.setText(num.getPercentage()  + " %");
+                m ++;
             }
         });
 
